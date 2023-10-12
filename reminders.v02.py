@@ -21,3 +21,5 @@ elif(hour>=21 and hour<=23):
     print("\nGet that SLEEP. And rePEAT!\n")
 else:
     print("\nYou didn't type and acceptable value! (0-23)\n")
+print("Date is:\n"+str(now.month)+"/"+str(now.day)+"/"+str(now.year)+"\n")
+print("Time is:\n"+str(now.hour)+"h"+str(now.minute)+"m"+str(now.second)+"s"+str(now.microsecond)+"ms\n")
