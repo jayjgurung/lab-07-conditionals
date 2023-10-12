@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstNum = prompt("Enter a value for first number:\n");
+        var secondNum = prompt("Enter a value for second number:\n");
+        var operation = prompt("What kind of operation do you want?\n * mul\n* div\n* mod");
+        var answer;
+        if (operation==="mul") {
+            answer = firstNum*secondNum;
+            console.log(firstNum+"x"+secondNum+" is : "+answer);
+            alert(firstNum+"x"+secondNum+" is : "+answer);
+        } else if (operation==="div") {
+            answer = firstNum/secondNum;
+            console.log(firstNum+"/"+secondNum+" is : "+answer);
+            alert(firstNum+"/"+secondNum+" is : "+answer);    
+        } else if (operation==="mod") {
+            answer = firstNum%secondNum;
+            console.log(firstNum+"%"+secondNum+" is : "+answer);
+            alert(firstNum+"%"+secondNum+" is : "+answer);    
+        } else {
+            console.log("\ninvalid operation!\n");
+            alert("\nInvalid Operation!!!\n");
+        }
+    </script>
+</body>
+</html>
