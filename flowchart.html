@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //initial question
+        var move = prompt("Does it move? (yes/no)");
+        //Q1. condition being yes
+        if (move == "yes") {
+            var should = prompt ("Should it? (yes/no)");
+            if (should == "yes"){       //Q2. condition being yes
+                console.log("No problem.");
+            } else if (should == "no"){ //Q2. condition being no
+                console.log("You should use duct tape!!");
+            } else {
+                console.log(" Invalid response. You should have typed yes or no.");
+            }
+
+        //Q1.  condition being no
+        } else if (move == "no") {
+            var should = prompt("Should it?");
+            if (should =="yes") {  //Q2. condition being yes
+                console.log("You should use WD-40!");
+            }else if (should == 'no') { //Q2. condition being no
+                console.log("No problem!");
+            } else {
+                console.log(" Invalid response. You should have typed yes or no.");
+            }
+
+        } else {
+            console.log(" Invalid response. You should have typed yes or no.");
+        }
+        document.write("Hope your problem is solved.");
+
+    </script>
+</body>
+</html>
